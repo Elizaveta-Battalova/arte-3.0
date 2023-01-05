@@ -135,13 +135,6 @@ nav {
   border: 1.5px solid #f2f5f7;
   transition: all ease-in-out 350ms;
 }
-.video{
-  width: 85%;
-  margin: auto;
-}
-video {
-  width: 100%;
-}
 
 main {
   display: flex;
@@ -166,6 +159,7 @@ main {
   padding-bottom: 50px;
 }
 .card {
+  width: 80%;
   display: flex;
   flex-direction: row;
   box-shadow: 0 14px 80px rgb(34 35 58 / 20%);
@@ -174,93 +168,13 @@ main {
   margin-bottom: 40px;
 }
 
-.slide img{
-  width: 400px;
+.card img {
+  width: 350px;
   border-radius: 25px;
   box-shadow: 4px 13px 30px 1px #ecb898;
 }
-
-#slider{
-  position:relative;
-  overflow:hidden;
-  border-radius: 25px;
-  box-shadow:2px 5px 10px rgba(0,0,0,0.4);
-}
-
-.slide{
-  width:100%;
-  display:none;
-  animation-name:fade;
-  animation-duration:1s;
-  border-radius: 25px;
-  background-color: transparent;
-}
-
-
-@keyframes fade{
-  from{opacity:0.5;}
-  to{opacity:1;}
-}
-
-.controls{
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
-  font-size:1.5em;
-  padding:15px 10px;
-  border-radius:5px;
-  
-}
-
-.controls:hover{
-  background:white;
-  transition:0.3s;
-}
-
-.controls:active{
-  color:gray;
-}
-
-#left-arrow{
-  left:10px;
-  color:#a4643b;
-}
-
-#right-arrow{
-  right:10px;
-  color:#a4643b;
-}
-
-@media (max-width:576px){
-  
-  .controls{
-    font-size:1em;
-  }
-  
-  #dots-con{
-    display:none;
-  }
-}
-
-.text-flicker {
-  width: 100px;
-  text-align: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 25px 0 25px 0;
-  animation: flicker 3s infinite; 
-  color: rgb(255, 255, 255);
-  background-color: rgb(169 25 25);
-  padding: 10px;
-  box-shadow: 1px 1px 5px 1px #303030;
-}
-  @keyframes flicker {  
-    0% { color: rgb(255, 255, 255); }
-    50% { color: rgb(169 25 25); }
-    100% { color: rgb(255, 255, 255); } 
-  }
 .card-info {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -308,6 +222,7 @@ main {
 
 .tickets-button {
   width: 200px;
+  text-decoration:none;
   background-image: linear-gradient(147deg, #a4643b 0, #210d00 74%);
   padding: 15px 25px;
   border-radius: 50px;
@@ -317,6 +232,9 @@ main {
   font-weight: 500;
   text-align: center;
   letter-spacing: 1px;
+}
+.tickets-button:hover{
+  color: #fff;
 }
 .program {
   display: flex;
@@ -732,11 +650,12 @@ footer {
   width: 100%;
   background-color: #210d00;
   color: #fff;
+
 }
 a[href^="tel"]{
-    color: inherit;
-    text-decoration:none;
-  }
+  color: inherit;
+  text-decoration:none;
+}
 
 .top_header {
   padding: 2rem;
@@ -810,7 +729,7 @@ footer .bottom_content section {
     padding-top: 100px;
   }
     section {
-  min-height: 50vh;
+  min-height: 85vh;
 }
   .logo p {
     font-size: 27px;
@@ -829,13 +748,9 @@ footer .bottom_content section {
     align-items: center;
     margin-bottom: 50px;
   }
-  #slider{
-    width:90%;
-  }
-  .slide img{
+  .card img {
     width: 100%;
   }
-
   .program {
     flex-direction: column;
     width: 100%;
