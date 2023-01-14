@@ -65,54 +65,104 @@ window.addEventListener("scroll", () => {
 // });
 
 
-let sliders = document.querySelectorAll('.slider');
-for (let i = 0; i < sliders.length; i++) {
-  console.log('sliders array length: ' + sliders.length);
-
-  changeSlide()
+const largeSlider = ()=>{
+	let largeSliders = document.querySelectorAll('.large-swiper')
+	let prevArrow = document.querySelectorAll('.prev')
+	let nextArrow = document.querySelectorAll('.next')
+	largeSliders.forEach((slider, index)=>{
+    // this bit checks if there's more than 1 slide, if there's only 1 it won't loop
+		let sliderLength = slider.children[0].children.length
+		let result = (sliderLength > 1) ? true : false
+		const swiper = new Swiper(slider, {
+			direction: 'horizontal',
+			loop: result,
+			navigation: {
+        // the 'index' bit below is just the order of the class in the queryselectorAll array, so the first one would be NextArrow[0] etc
+				nextEl: nextArrow[index],
+				prevEl: prevArrow[index],
+			},
+			speed: 1000,
+		});	
+	})
 }
+window.addEventListener('load', largeSlider)
 
+// let sliders = document.querySelectorAll('.slider');
 
-let secondSlider = document.querySelectorAll('.secondSlider');
+// for (let i = 0; i < sliders.length; i++) {
+//   init_slider(sliders[i]);
+// }
 
-for (let i = 0; i < secondSlider.length; i++) {
-  changeSlide()
-}
-
-let slides = document.querySelectorAll(".slide");
-let index = 0;
-
-
-function prevSlide(n){
-  index+=n;
-  changeSlide();
-}
-
-function nextSlide(n){
-  index+=n;
-  changeSlide();
-}
-
-
-changeSlide();
-
-function changeSlide(){
-
-    if(index>slides.length-1)
-    index=0;
+// function init_slider(slider) {
   
-   if(index<0)
-    index=slides.length-1;
-    for(let i=0;i<slides.length;i++){
-      slides[i].style.display = "none";
-    } if ($(window).width() > 960) {
-      slides[index].style = "display:flex; flex-direction:row";
+//   let slide = slider.querySelectorAll('.slide');
+//   const reverseslide = Array.from(slide)
+//   const reversed = reverseslide.reverse()
   
-    } else {
-      slides[index].style = "display:block;";
-    }
+//   let next = slider.querySelector('.next');
+//   let back = slider.querySelector('.back');
+
+//   let i = 0;
+  
+//   next.addEventListener('click', function() {
+//     slide[i].classList.remove('block');
     
-}
+//     i = (i + 1) % slide.length;
+    
+//     slide[i].classList.add('block');
+//   });  
+
+//   back.addEventListener('click', function() {
+//     reversed[i].classList.remove('block');
+    
+//     i = (i + 1) % slide.length;
+    
+//     reversed[i].classList.add('block');
+//   });  
+// }
+
+// let sliders = document.querySelectorAll('.slider');
+// for (let i = 0; i < sliders.length; i++) {
+//   console.log('sliders array length: ' + sliders.length);
+
+//   changeSlide()
+// }
+
+
+// let slides = document.querySelectorAll(".slide");
+// let index = 0;
+
+
+// function prevSlide(n){
+//   index+=n;
+//   changeSlide();
+// }
+
+// function nextSlide(n){
+//   index+=n;
+//   changeSlide();
+// }
+
+
+// changeSlide();
+
+// function changeSlide(){
+
+//     if(index>slides.length-1)
+//     index=0;
+  
+//    if(index<0)
+//     index=slides.length-1;
+//     for(let i=0;i<slides.length;i++){
+//       slides[i].style.display = "none";
+//     } if ($(window).width() > 960) {
+//       slides[index].style = "display:flex; flex-direction:row";
+  
+//     } else {
+//       slides[index].style = "display:block;";
+//     }
+    
+// }
 
 //sale button
 $(document).ready(function () {
