@@ -994,4 +994,7 @@ footer .bottom_content section {
     font-size: 20px;
     margin-top: 10px;
   }
+  .next,.prev {
+    top: 300px;
+ }
 }
