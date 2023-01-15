@@ -926,6 +926,9 @@ footer .bottom_content section {
   video {
     top: 60px;
   }
+  .afish-wrapper{
+    width: 90%;
+  }
   .swiper-slide-inside {
     width: 100%;
     float: left;
