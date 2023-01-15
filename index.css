@@ -258,7 +258,7 @@ h2{
   margin-bottom: 30px;
 }
 .afish-wrapper{
-  width: 95%;
+  width: 80%;
   margin: auto;
 }
 .large-slider-container{
@@ -284,6 +284,7 @@ h2{
   width: 400px;
   flex-shrink: 0;
   background-image: linear-gradient(147deg, #a4643b 0, #210d00 74%);
+  box-shadow: 4px 13px 30px 1px #ecb898;
   background-size: contain;
   border-radius: 20px;
   transform: translateX(1px);
@@ -927,7 +928,7 @@ footer .bottom_content section {
     top: 60px;
   }
   .afish-wrapper{
-    width: 90%;
+    width: 95%;
   }
   .swiper-slide-inside {
     width: 100%;
