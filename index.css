@@ -298,7 +298,7 @@ h2{
     height: 30px;
     margin: auto;
     color:#a4643b;
-    font-size: 40px;
+    font-size: 35px;
     z-index: 1;
 }
 .next {
@@ -310,7 +310,7 @@ h2{
     height: 30px;
     margin: auto;
     color:#a4643b;
-    font-size: 40px;
+    font-size: 35px;
     z-index: 1;
 }
 .next:hover,.prev:hover{
