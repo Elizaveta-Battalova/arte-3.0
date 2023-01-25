@@ -36,12 +36,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.block {
-  display: block;
-  object-fit: cover;
-  width: 100px;
-  height: 100px;
-}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -276,17 +271,15 @@ h1 {
     )
     no-repeat -2em 0%;
   background-size: 2em 100%;
-  /* -moz-transform: skewX(-50deg);
+  -moz-transform: skewX(-50deg);
   -o-transform: skewX(-50deg);
   -webkit-transform: skewX(-50deg);
-  trans00: skewX(-50deg); */
+  trans00: skewX(-50deg);
 }
 #kupasen-ugakimev > span.blink_on:after {
   transition: 1s linear;
   background-position: 130% 0%;
 }
-
-
 
 /*Styling Hamburger Icon*/
 .hamburger div {
@@ -413,90 +406,6 @@ h2{
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
-
-.afisha-wrapper{
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-}
-
-
-.slide img{
-  width: 400px;
-  border-radius: 25px;
-  box-shadow: 4px 13px 30px 1px #ecb898;
-}
-
-#slider{
-  position:relative;
-  overflow:hidden;
-  border-radius: 25px;
-  box-shadow:2px 5px 10px rgba(0,0,0,0.4);
-}
-#secondSlider{
-  position:relative;
-  overflow:hidden;
-  border-radius: 25px;
-  box-shadow:2px 5px 10px rgba(0,0,0,0.4);
-}
-
-.slide{
-  width:100%;
-  display:none;
-  animation-name:fade;
-  animation-duration:1s;
-  border-radius: 25px;
-  background-color: transparent;
-}
-
-
-@keyframes fade{
-  from{opacity:0.5;}
-  to{opacity:1;}
-}
-
-.controls{
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
-  font-size:1.5em;
-  padding:15px 10px;
-  border-radius:5px;
-  
-}
-
-.controls:hover{
-  background:white;
-  transition:0.3s;
-}
-
-.controls:active{
-  color:gray;
-}
-
-#left-arrow{
-  left:10px;
-  color:#a4643b;
-}
-
-#right-arrow{
-  right:10px;
-  color:#a4643b;
-}
-
-@media (max-width:576px){
-  
-  .controls{
-    font-size:1em;
-  }
-  
-  #dots-con{
-    display:none;
-  }
-}
-
 .blog-slider {
   width: 95%;
   position: relative;
@@ -731,6 +640,7 @@ h2{
   text-align: center;
   letter-spacing: 1px;
 }
+
 .card-info img {
   width: 250px;
   border-radius: 0;
@@ -1203,7 +1113,7 @@ footer .bottom_content section {
   color: rgba(255, 255, 255, 0.7);
   font-size: 12px;
 }
-@media (max-width: 960px) {
+@media (max-width: 900px) {
   .logo p {
     font-size: 27px;
     margin-top: 5px;
@@ -1236,10 +1146,6 @@ footer .bottom_content section {
   }
   video {
     top: 60px;
-  }
-
-  .slide img{
-    width: 100%;
   }
   section h1 {
     font-size: 2rem;
