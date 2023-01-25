@@ -162,10 +162,17 @@ if ($(".product-left").length) {
   productThumbs.controller.control = productSlider;
 }
 
-$("body").on("click touchstart", function () {
-  let videoElement = document.getElementsById("video");
-  if (videoElement.playing) {
-  } else {
-    $("video").trigger("play");
+Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
+  get: function () {
+      return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
   }
 });
+
+jQuery('body').on('click touchstart', function () {
+          const videoElement = document.getElementById('myVideo');
+          if (videoElement.playing) {
+          }
+          else {
+              videoElement.play();
+          }
+  });
