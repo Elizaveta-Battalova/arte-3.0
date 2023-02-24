@@ -162,17 +162,21 @@ if ($(".product-left").length) {
   productThumbs.controller.control = productSlider;
 }
 
-Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
+Object.defineProperty(HTMLMediaElement.prototype, "playing", {
   get: function () {
-      return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
-  }
+    return !!(
+      this.currentTime > 0 &&
+      !this.paused &&
+      !this.ended &&
+      this.readyState > 2
+    );
+  },
 });
 
-jQuery('body').on('click touchstart', function () {
-          const videoElement = document.getElementById('myVideo');
-          if (videoElement.playing) {
-          }
-          else {
-              videoElement.play();
-          }
-  });
+jQuery("body").on("click touchstart", function () {
+  const videoElement = document.getElementById("myVideo");
+  if (videoElement.playing) {
+  } else {
+    videoElement.play();
+  }
+});
