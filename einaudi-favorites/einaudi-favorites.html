@@ -4,21 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Врубель | Рок</title>
+    <title>«Эйнауди | Избранное»</title>
     <meta
       name="description"
-      content="Иммерсивное симфоническое шоу, в котором недоступное и мистическое окажется рядом, стирая грань между мирами реальности и сказки."
+      content="Ищете варианты как провести субботний вечер в центре Москвы? У нас есть то, что нужно именно Вам!"
     />
     <meta
       name="Keywords"
-      content="концерты классической музыки, музыка, классическая музыка, концерт."
+      content="концерты классической музыки, музыка, классическая музыка, концерт,Эйнауди"
     />
     <link
       type="image/x-icon"
-      href="../../images/favicon.ico"
+      href="../images/favicon.ico"
       rel="shortcut icon"
     />
-    <link type="Image/x-icon" href="../../images/favicon.ico" rel="icon" />
+    <link type="Image/x-icon" href="../images/favicon.ico" rel="icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -150,8 +150,7 @@
         style="position: fixed; left: -999px"
         alt=""
     /></noscript>
-
-    <link rel="stylesheet" href="vrubel.css" />
+    <link rel="stylesheet" href="einaudi-favorites.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -163,8 +162,8 @@
       </div> -->
       <nav class="header" id="navbar">
         <div class="logo">
-          <a href="../../index.html"
-            ><img src="../../images/logo.png" alt="Logo Image"
+          <a href="../index.html"
+            ><img src="../images/logo.png" alt="Logo Image"
           /></a>
 
           <p>ARTEMUSICUM</p>
@@ -176,22 +175,22 @@
         </div>
         <ul class="nav-links">
           <li>
-            <a class="nav-links-li-a" href="../../index.html#about_us">о нас</a>
+            <a class="nav-links-li-a" href="../index.html#about_us">о нас</a>
           </li>
           <li>
-            <a class="nav-links-li-a" href="../../index.html#rating">отзывы</a>
+            <a class="nav-links-li-a" href="../index.html#rating">отзывы</a>
           </li>
           <li>
             <a
               class="nav-links-li-a"
-              href="../../gallery/galleries-page/galleries-page.html"
+              href="../gallery/galleries-page/galleries-page.html"
               >галерея</a
             >
           </li>
           <li>
-            <a class="nav-links-li-a" href="../../index.html#contacts">контакты</a>
+            <a class="nav-links-li-a" href="../index.html#contacts">контакты</a>
           </li>
-          <li><a class="afisha-button" href="../../index.html#hook">афиша</a></li>
+          <li><a class="afisha-button" href="../index.html#hook">афиша</a></li>
           <li>
             <a
               class="help-button"
@@ -204,70 +203,32 @@
 
       <main>
         <div class="card">
-          <div id="slider">
-            
-            <div class="slide">
-              <img src="../images/001.fotofaktura.jpg" />
-              <p class="text-flicker">exclusive</p>
-            </div>
-
-            <div class="slide">
-              <img src="../images/vrubel1.jpg" />
-            </div>
-
-            <div class="slide">
-              <img src="../images/vrubel2.jpg" />
-            </div>
-            
-            <div class="slide">
-              <img src="../images/vrubel3.jpg" />
-            </div>
-            
-            <div class="slide">
-              <img src="../images/vrubel4.jpg" />
-            </div>
-            
-            <div class="slide">
-              <img src="../images/vrubel5.jpg" />
-            </div>
-
-            <!--Controlling arrows-->
-            <span class="controls" onclick="prevSlide(-1)" id="left-arrow"
-              ><i class="fa fa-arrow-left" aria-hidden="true"></i>
-            </span>
-            <span class="controls" id="right-arrow" onclick="nextSlide(1)"
-              ><i class="fa fa-arrow-right" aria-hidden="true"></i>
-            </span>
-          </div>
-
-
-          
-          <!-- <div>
-            <img src="../images/vrubel.jpg" alt="artemusicum" />
-            <p class="text-flicker">exclusive</p>
-          </div> -->
-
+          <img src="../images/einaudi-favorites.jpg" alt="artemusicum" />
           <div class="card-info">
-            <p class="date">
-              <span style="color: #0d0925">10 декабря</span> | 19:00 –
-              иммерсивное welcome show
-            </p>
-            <p class="date">20:00 – начало концерта</p>
-            <p class="name">Врубель | Rock мистерия</p>
-            <p class="place">Москва | ДК FOTOFAKTURA</p>
+            <p class="date">29 апреля (сб) | 20:00</p>
+            <p class="name">«Эйнауди | Избранное»</p>
+            <a class="place" href="https://fotofaktura.ru/"
+              >Москва | Дом культуры FOTOFAKTURA</a
+            >
+            <button
+              class="tickets-button"
+              onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2278@17539159', type: 'session' }) }])"
+            >
+              КУПИТЬ БИЛЕТЫ
+            </button>
             <!-- <a href="../pushkin-card/pushkin.html"><img src="../images/pushkin3.png" alt=""></a> -->
           </div>
         </div>
 
-         <section>
+        <!-- <section>
           <div class="container reveal">
             <div class="video">
               <video autoplay muted playsinline loop controls>
-                <source src="../../video/vrubel.mp4" type="video/mp4" />
+                <source src="../video/interstellar.mp4" type="video/mp4" />
               </video>
             </div>
           </div>
-        </section>
+        </section>-->
 
         <section>
           <div class="container reveal">
@@ -275,35 +236,19 @@
               <div class="program-list">
                 <p class="name">Программа</p>
                 <ul>
-                  <li style="font-style: italic; font-weight: bold">
-                    «Ведьмак»
-                  </li>
-                  <li>Cloak and daggerv</li>
-                  <li>Kaer Morhen</li>
-                  <li>Lullaby of Woe</li>
-                  <li>Spikeroog</li>
-                  <li>Commanding the fury</li>
-                  <li>Ведьмаку заплатите чеканной монетой</li>
-                  <li>Aen Seidhe</li>
-                  <li>Silver for monsters</li>
-                  <li>Марионетки</li>
-                </ul>
-
-                <ul>
-                  <li style="font-style: italic; font-weight: bold">
-                    «Король и шут»
-                  </li>
-                  <li>Воспоминания о былой любви</li>
-                  <li>Мёртвый анархист</li>
-                  <li>Камнем по голове</li>
-                  <li>Прыгну со скалы</li>
-                  <li>Лесник</li>
-                  <li>Танец злобного гения</li>
-                  <li>Фокусник</li>
-                  <li>Проклятый старый дом</li>
-                  <li>Кукла колдуна</li>
+                  <li>«Experience»</li>
+                  <li>«Divenire»</li>
+                  <li>«Fly»</li>
+                  <li>«Indaco»</li>
+                  <li>«Lady Labyrith»</li>
+                  <li>«Elegy for the Arctic»</li>
+                  <li>«Life»</li>
+                  <li>«Una mattina»</li>
+                  <li>«Cold wind»</li>
+                  <li>«The path of the fossils»</li>
+                  <li>«Choros»</li>
                   <li style="font-style: italic">
-                    *возможны изменения и дополнения в программе
+                    Продолжительность 1 час 50 минут с антрактом
                   </li>
                 </ul>
               </div>
@@ -311,9 +256,19 @@
                 <p class="name">Исполнители</p>
                 <a
                   class="performers"
-                  href="../../musicians/simple-music-ensemble/simple-music-ensemble.html"
+                  href="../musicians/simple-music-ensemble/simple-music-ensemble.html"
                   >Simple music ensemble</a
                 >
+                <p style="margin-top: 20px">
+                  Коллектив профессиональных музыкантов, которых объединило
+                  стремление выйти за рамки классической музыки. Основная идея
+                  коллектива заключается в желании исполнять любимую музыку в
+                  оригинальных нестандартных пространствах. Смелые творческие
+                  задумки находят отклик у слушателей не только в России, но и
+                  за рубежом. Авторские аранжировки, экспериментальное звучание
+                  и поиск нового музыкального языка для общения со слушателями
+                  делают коллектив уникальным.
+                </p>
               </div>
             </div>
           </div>
@@ -324,58 +279,9 @@
             <div class="details">
               <p class="name">Подробнее</p>
               <div class="about">
-                <p>
-                  Иммерсивное симфоническое шоу, в котором недоступное и
-                  мистическое окажется рядом, стирая грань между мирами
-                  реальности и сказки.
-                </p>
-                <p>
-                  Возможно ли как-нибудь и когда-нибудь оказаться на границе
-                  двух миров?<br />
-                  Мира реальности и мира сказки?<br />
-                  С самых истоков бытия, человек пытался оказаться на этой
-                  границе. Человек видел, слышал, осязал и чувствовал то, что
-                  мог объяснить и то, что не поддавалось его осмыслению.
-                </p>
-                <p>
-                  Мистический перформанс творческого союза ДК Fotofaktura &
-                  Artemusicum & Simple music ensemble - это уникальный в своём
-                  роде иммерсивный концерт, который объединит музыку, живопись и
-                  театр в одном невероятном вечере. Действие развернется
-                  одновременно во всём пространстве в историческом здании 1913
-                  года. Гость становится участником, оказываясь на переходе
-                  между сказкой и реальностью.<br />
-                  Где стирается грань?<br />
-                  В центре этого вопроса окажется каждый из нас, проживая
-                  происходящее через призму личного опыта. Вселенная образов,
-                  чувств, эмоций и одержимости величайшего живописца своего и
-                  сегодняшнего времени Михаила Врубеля соединится в гармонии с
-                  человеком ХХI века. Синтез аудиовизуального искусства,
-                  театрализованного перформанса и световых инсталляций, который
-                  поможет осмыслить собственное «Я».
-                </p>
-                <p>
-                  Кульминацией всего станет симфонический концерт. Мистическая
-                  музыка из культовой во всём мире саги «Ведьмак» и эпические
-                  баллады неиссякаемого источника аллюзий и метафор «Король и
-                  шут». Эта феерия станет проводником нашего общего голоса к
-                  ответам на вопросы человечества! Музыкальная составляющая
-                  подобрана и соткана виртуозами, представляющими мир музыки –
-                  Simple music ensemble.
-                </p>
-                <p style="font-weight: bold">
-                  Иммерсивное симфоническое шоу включает в себя формат
-                  «безлимит» на угощение гостей напитками.
-                </p>
-                <p>
-                  Мы создаем атмосферу волшебного сказочного мира,
-                  вдохновленного музыкой, картинами гения Врубеля и фольклорной
-                  поэзией. Док Культуры Фотофактура и Artemusicum преобразят
-                  пространство, где музыка станет инструментом диалога зрителя
-                  этого и потустороннего мира.
-                </p>
-                <p></p>
-                <p></p>
+<p>Ищете варианты как провести субботний вечер в центре Москвы? У нас есть то, что нужно именно Вам!</p>
+<p>Увидеть сердце Москвы под лучами заходящего солнца, насладиться чарующими мелодиями и интроспективной составляющей творчества культового композитора нашей эпохи Людовико Эйнауди - ARTEMUSICUM приглашает Вас на эксклюзивный концерт, организованный совместно с Домом культуры «Фотофактура».  </p>
+<p>Так хорошо знакомые сочинения выдающегося неоклассика находят отклик в сердцах слушателей по всему миру. Саундтреки, написанные Людовиком Эйнауди к фильмам «1+1», «Чёрный лебедь», «Астрал» и многим другим, вышли далеко за рамки «музыки к фильмам» и стали независимыми музыкальными сочинениями, которые погружают слушателей в атмосферу любимого кино и без визуального сопровождения. Проведите незабываемый музыкальный вечер с панорамным видом на Старую Площадь, соборы Кремля и удивительные по своей красоте улицы Маросейка и Ильинка.</p>
               </div>
             </div>
           </div>
@@ -383,7 +289,7 @@
 
         <div class="icons">
           <div id="biografy-btn">
-            <img src="../../images/flash-sale.png" alt="" />
+            <img src="../images/flash-sale.png" alt="" />
           </div>
         </div>
 
@@ -391,7 +297,7 @@
           <div class="container">
             <div class="biography">
               <div class="sidebar-biography-btn" id="biography-sidebar-btn">
-                <img src="../../images/close.png" alt="" />
+                <img src="../images/close.png" alt="" />
               </div>
               <div class="form">
                 <div class="ar_form">
@@ -402,15 +308,10 @@
                   >
                     <div class="subscribe-form-item subscribe-form-item--text">
                       <div style="text-align: center">
-                        <span style="line-height: 1.5"
-                          ><span style="font-size: 16px"
-                            ><span
-                              style="font-family: Tahoma, Geneva, sans-serif"
-                              >Подпишитесь на анонсы концертов<br />
-                              и получайте новости первыми!</span
-                            ></span
-                          >
-                        </span>
+                        <div style="text-align: center">
+                          При подписке активируется промокод ARTE -10% на все
+                          концерты в афише!
+                        </div>
                       </div>
                     </div>
                     <div
@@ -471,15 +372,15 @@
                       <div style="text-align: center">
                         <span style="font-size: 14px"
                           ><span style="line-height: 2"
-                            >Для подписчиков<br />действуют промокоды
-                            со&nbsp;скидками<br />на все концерты из
-                            афиши!</span
+                            >Подпишитесь на анонсы концертов и получайте новости
+                            первыми!</span
                           ><span style="line-height: 2.5"></span>
                           <br />
                         </span>
                         <br />
                       </div>
                     </div>
+
                     <input type="hidden" name="charset" value="UTF-8" />
                     <input type="hidden" name="default_list_id" value="494" />
                     <input type="hidden" name="overwrite" value="2" />
@@ -502,7 +403,7 @@
           </div>
           <div class="section">
             <span><i class="fa fa-phone"></i></span>
-            <span style="color: white">+7 (495) 227-31-55</span>
+            <a style="color: white" href="tel:84952121195">8 (495) 212 11 95</a>
           </div>
           <div class="section">
             <span><i class="fa fa-envelope"></i></span>
