@@ -203,37 +203,121 @@
       </nav>
 
       <main>
-        <div class="card">
-          <img src="../images/jazz.jpg" alt="artemusicum" />
-          <div class="card-info">
-            <a href="../neoclassica/neoclassica.html" class="name">Циммер & Эйнауди</a>
-            <p class="date">14 июня (ср) | 20:00</p>
+        <div class="afisha-wrapper">
+          <div class="large-slider-container">
+            <div class="large-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper-slide-inside">
+                    <a href="../neoclassica/neoclassica.html"
+                      ><img
+                        class="swiper-slide-inside-img"
+                        src="../images/neoclassica.jpg"
+                        alt="artemusicum"
+                    /></a>
+                    <div class="card-info">
+                      <p class="date">14 июня (ср) | 20:00</p>
+                      <a class="name" href="../neoclassica/neoclassica.html"
+                        >Шедевры неоклассики<br />Циммер & Эйнауди</a
+                      >
+                      <p style="font-size: 20px; font-weight: bold">
+                        Большой летний концерт
+                      </p>
+                      <a
+                        class="place"
+                        href="https://vdnh.ru/places/zelenyy-teatr-vdnkh/"
+                        >Москва | Зеленый театр ВДНХ</a
+                      >
+                      <button
+                        class="tickets-button"
+                        onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@season-17798827', type: 'session' }) }])"
+                      >
+                        КУПИТЬ АБОНЕМЕНТ
+                      </button>
+                      <!--<a href="./pushkin-card/pushkin.html"
+                ><img src="./images/pushkin3.png" alt=""
+              /></a>-->
+                    </div>
+                  </div>
+                </div>
 
-            <a href="../jazz/jazz.html" class="name">SOME LIKE IT JAZZ</a>
-            <p class="date">19 июля (ср) | 20:00</p>
+                <div class="swiper-slide">
+                  <div class="swiper-slide-inside">
+                    <a href="../jazz/jazz.html"
+                      ><img
+                        class="swiper-slide-inside-img"
+                        src="../images/jazz.jpg"
+                        alt="artemusicum"
+                    /></a>
+                    <div class="card-info">
+                      <p class="date">19 июля (ср) | 20:00</p>
+                      <a class="name" href="../jazz/jazz.html"
+                        >«Some like it jazz»</a
+                      >
+                      <p style="font-size: 20px; font-weight: bold">
+                        Большой летний джазовый концерт
+                      </p>
+                      <a
+                        class="place"
+                        href="https://vdnh.ru/places/zelenyy-teatr-vdnkh/"
+                        >Москва | Зеленый театр ВДНХ</a
+                      >
+                      <button
+                        class="tickets-button"
+                        onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@season-17798827', type: 'session' }) }])"
+                      >
+                        КУПИТЬ АБОНЕМЕНТ
+                      </button>
+                      <!--<a href="./pushkin-card/pushkin.html"
+                ><img src="./images/pushkin3.png" alt=""
+              /></a>-->
+                    </div>
+                  </div>
+                </div>
 
-            <a href="../jazzworld/jazzworld.html" class="name">ШЕДЕВРЫ МИРОВОГО ДЖАЗА</a>
-            <p class="date">16 августа (ср) | 20:00</p>
-
-            <button
-              onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@season-17798827', type: 'session' }) }])"
-              class="tickets-button"
-            >
-              КУПИТЬ АБОНЕМЕНТ
-            </button>
-            <!-- <a href="../pushkin-card/pushkin.html"><img src="../images/pushkin3.png" alt=""></a> -->
-          </div>
-        </div>
-        <!--         
-         <section>
-          <div class="container reveal">
-            <div class="video">
-              <video autoplay muted playsinline loop controls>
-                <source src="../video/zimmerrozahall.mp4" type="video/mp4" />
-              </video>
+                <div class="swiper-slide">
+                  <div class="swiper-slide-inside">
+                    <a href="../jazzworld/jazzworld.html"
+                      ><img
+                        class="swiper-slide-inside-img"
+                        src="../images/jazzworld.jpg"
+                        alt="artemusicum"
+                    /></a>
+                    <div class="card-info">
+                      <p class="date">16 августа (ср) | 20:00</p>
+                      <a class="name" href="../jazzworld/jazzworld.html"
+                        >«Шедевры мирового джаза»</a
+                      >
+                      <p style="font-size: 20px; font-weight: bold">
+                        Большой джазовый концерт
+                      </p>
+                      <a
+                        class="place"
+                        href="https://vdnh.ru/places/zelenyy-teatr-vdnkh/"
+                        >Москва | Зеленый театр ВДНХ</a
+                      >
+                      <button
+                        class="tickets-button"
+                        onclick="window['YandexTicketsDealer'].push(['getDealer', function(dealer) { dealer.open({ id: 'ticketsteam-2282@season-17798827', type: 'session' }) }])"
+                      >
+                        КУПИТЬ АБОНЕМЕНТ
+                      </button>
+                      <!--<a href="./pushkin-card/pushkin.html"
+                ><img src="./images/pushkin3.png" alt=""
+              /></a>-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="prev">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+              </div>
+              <div class="next">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              </div>
             </div>
           </div>
-        </section> -->
+        </div>
 
         <div class="details">
           <p class="name" style="margin-bottom: 30px">АБОНЕМЕНТ ARTEЛЕТО</p>
@@ -243,13 +327,17 @@
               в одном абонементе ARTEЛЕТО!
             </p>
             <p>
-              <a class="name" href="../neoclassica/neoclassica.html">ЦИММЕР & ЭЙНАУДИ, 14 июня (ср)</a> -
-              колоссальная мощь и отражение актуальных для каждого эмоций в
+              <a class="name" href="../neoclassica/neoclassica.html"
+                >ЦИММЕР & ЭЙНАУДИ, 14 июня (ср)</a
+              >
+              - колоссальная мощь и отражение актуальных для каждого эмоций в
               сочинениях культовых композиторов современности
             </p>
             <p>
-              <a class="name" href="../jazz/jazz.html">SOME LIKE IT JAZZ, 19 июля (ср)</a> -
-              зажигательная энергетика и невероятный драйв американского джаза
+              <a class="name" href="../jazz/jazz.html"
+                >SOME LIKE IT JAZZ, 19 июля (ср)</a
+              >
+              - зажигательная энергетика и невероятный драйв американского джаза
               через призму одной из самых ярких певиц современности Анастасии
               Лютовой, солистки коллектива “Лютый Бэнд”
             </p>
