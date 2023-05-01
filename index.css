@@ -36,7 +36,7 @@ body {
   }
 }
 nav {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   height: 100px;
   width: 100vw;
   background-color: #210d00;
@@ -141,7 +141,7 @@ video {
 }
 .blick {
   margin-bottom: 50px;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .preloader {
@@ -154,11 +154,10 @@ video {
   z-index: 1001;
 }
 
-
 .preloader__row {
   position: relative;
-background-image: url("./images/favicon.ico");
-background-size: contain;
+  background-image: url("./images/favicon.ico");
+  background-size: contain;
   top: 50%;
   left: 50%;
   width: 70px;
@@ -186,7 +185,7 @@ background-size: contain;
   }
 }
 h1 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   color: #a4643b;
   font-size: 50px;
   font-weight: bold;
@@ -220,8 +219,8 @@ h1 {
   background-position: 130% 0%;
 }
 
-h2{
-  font-family: 'Cormorant Garamond', serif;
+h2 {
+  font-family: "Cormorant Garamond", serif;
   font-weight: 800;
   margin-bottom: 40px;
 }
@@ -245,14 +244,14 @@ h2{
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.afish-wrapper{
+.afish-wrapper {
   width: 80%;
   margin: auto;
 }
-.large-slider-container{
-	width: 100%;
+.large-slider-container {
+  width: 100%;
   margin: auto;
-	float: left;
+  float: left;
 }
 .large-swiper {
   overflow: hidden;
@@ -262,13 +261,13 @@ h2{
   border-radius: 25px;
 }
 .swiper-slide-inside {
-	width: 100%;
-	float: left;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.swiper-slide-inside-img{
+.swiper-slide-inside-img {
   width: 400px;
   flex-shrink: 0;
   background-image: linear-gradient(147deg, #a4643b 0, #210d00 74%);
@@ -279,32 +278,33 @@ h2{
   overflow: hidden;
 }
 .prev {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 10px;
-    width: 30px;
-    height: 30px;
-    margin: auto;
-    color:#a4643b;
-    font-size: 35px;
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  color: #a4643b;
+  font-size: 35px;
+  z-index: 1;
 }
 .next {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 10px;
-    width: 30px;
-    height: 30px;
-    margin: auto;
-    color:#a4643b;
-    font-size: 35px;
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  color: #a4643b;
+  font-size: 35px;
+  z-index: 1;
 }
-.next:hover,.prev:hover{
-  color:rgb(169 25 25);
-  transition:0.3s;
+.next:hover,
+.prev:hover {
+  color: rgb(169 25 25);
+  transition: 0.3s;
 }
 .text-flicker {
   width: 100px;
@@ -313,17 +313,23 @@ h2{
   top: 0;
   left: 0;
   border-radius: 0 0 25px 0;
-  animation: flicker 3s infinite; 
+  animation: flicker 3s infinite;
   color: rgb(255, 255, 255);
   background-color: rgb(169 25 25);
   padding: 10px;
   box-shadow: 1px 1px 5px 1px #303030;
 }
-  @keyframes flicker {  
-    0% { color: rgb(255, 255, 255); }
-    50% { color: rgb(169 25 25); }
-    100% { color: rgb(255, 255, 255); } 
+@keyframes flicker {
+  0% {
+    color: rgb(255, 255, 255);
   }
+  50% {
+    color: rgb(169 25 25);
+  }
+  100% {
+    color: rgb(255, 255, 255);
+  }
+}
 
 .card-info {
   width: 100%;
@@ -334,10 +340,10 @@ h2{
   padding: 25px;
   text-align: center;
 }
-.card a{
+.card a {
   color: black;
 }
-.card a:hover{
+.card a:hover {
   color: black;
 }
 
@@ -364,14 +370,14 @@ h2{
   margin-bottom: 20px;
   text-decoration: none;
 }
-.name:hover{
+.name:hover {
   color: #0d0925;
 }
 .performers {
   color: #4e4a67;
   margin-bottom: 30px;
   line-height: 1.5em;
-  transition: .5s;
+  transition: 0.5s;
 }
 .performers:hover {
   color: #a4643b;
@@ -449,13 +455,15 @@ section .text-container .text-box h3 {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.row{
+.row {
   justify-content: center;
 }
-.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
   background-image: url("./images/left.png");
 }
-.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
   background-image: url("./images/right.png");
 }
 .reveal {
@@ -469,16 +477,18 @@ section .text-container .text-box h3 {
   transform: translateY(0);
   opacity: 1;
 }
-.what-we-do, .what-we-do h3{
+.what-we-do,
+.what-we-do h3 {
   display: flex;
   justify-content: flex-start;
   text-align: start;
 }
-.we-are{
+.we-are {
   display: flex;
   justify-content: center;
 }
-.our-plans, .our-plans h3{
+.our-plans,
+.our-plans h3 {
   display: flex;
   justify-content: flex-end;
   text-align: end;
@@ -534,19 +544,19 @@ section .text-container .text-box h3 {
   margin: 5px;
 }
 
-a[href^="tel"]{
+a[href^="tel"] {
   color: inherit;
-  text-decoration:none;
+  text-decoration: none;
 }
 .partners {
   display: flex;
   flex-direction: row;
 }
-.swiper-slide-img{
+.swiper-slide-img {
   width: 200px;
 }
 .img-fluid {
-  cursor:pointer;
+  cursor: pointer;
   width: 50px;
 }
 .product-thumbs .swiper-slide-active img {
@@ -725,18 +735,17 @@ a[href^="tel"]{
   top: 0;
   width: 100%;
 }
-.confidence{
+.confidence {
   color: #180900;
-  transition: .5s;
+  transition: 0.5s;
 }
-.confidence:hover{
+.confidence:hover {
   color: #80421b;
 }
 footer {
   width: 100%;
   background-color: #210d00;
   color: #fff;
-
 }
 
 .top_header {
@@ -915,7 +924,7 @@ footer .bottom_content section {
   video {
     top: 60px;
   }
-  .afish-wrapper{
+  .afish-wrapper {
     width: 95%;
   }
   .swiper-slide-inside {
@@ -927,13 +936,14 @@ footer .bottom_content section {
     align-items: center;
   }
 
-  .swiper-slide-inside-img{
+  .swiper-slide-inside-img {
     width: 100%;
   }
-  .next,.prev {
+  .next,
+  .prev {
     top: 500px;
     font-size: 30px;
- }
+  }
   section h1 {
     font-size: 2rem;
     text-align: center;
@@ -978,12 +988,13 @@ footer .bottom_content section {
     display: inline-block;
   }
 }
-@media (max-width: 576px){
+@media (max-width: 576px) {
   .logo p {
     font-size: 20px;
     margin-top: 10px;
   }
-  .next,.prev {
+  .next,
+  .prev {
     top: 370px;
- }
+  }
 }
