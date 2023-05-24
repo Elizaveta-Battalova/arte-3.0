@@ -18,7 +18,7 @@ function getWindowWidth() {
 }
 
 if (getWindowWidth() <= 1200) {
-  window.onload = function () {
+  window.onload = function(){
     navLinks.addEventListener("click", () => {
       navLinks.classList.remove("open");
       links.forEach((link) => {
@@ -26,7 +26,7 @@ if (getWindowWidth() <= 1200) {
       });
       hamburger.classList.toggle("toggle");
     });
-  };
+}
 }
 
 $(document).ready(function () {
@@ -66,27 +66,27 @@ $(window).on("load", function () {
   $(".preloader").fadeOut().end().delay(500).fadeOut("slow");
 });
 
-const largeSlider = () => {
-  let largeSliders = document.querySelectorAll(".large-swiper");
-  let prevArrow = document.querySelectorAll(".prev");
-  let nextArrow = document.querySelectorAll(".next");
-  largeSliders.forEach((slider, index) => {
+const largeSlider = ()=>{
+	let largeSliders = document.querySelectorAll('.large-swiper')
+	let prevArrow = document.querySelectorAll('.prev')
+	let nextArrow = document.querySelectorAll('.next')
+	largeSliders.forEach((slider, index)=>{
     // this bit checks if there's more than 1 slide, if there's only 1 it won't loop
-    let sliderLength = slider.children[0].children.length;
-    let result = sliderLength > 1 ? true : false;
-    const swiper = new Swiper(slider, {
-      direction: "horizontal",
-      loop: result,
-      navigation: {
+		let sliderLength = slider.children[0].children.length
+		let result = (sliderLength > 1) ? true : false
+		const swiper = new Swiper(slider, {
+			direction: 'horizontal',
+			loop: result,
+			navigation: {
         // the 'index' bit below is just the order of the class in the queryselectorAll array, so the first one would be NextArrow[0] etc
-        nextEl: nextArrow[index],
-        prevEl: prevArrow[index],
-      },
-      speed: 1000,
-    });
-  });
-};
-window.addEventListener("load", largeSlider);
+				nextEl: nextArrow[index],
+				prevEl: prevArrow[index],
+			},
+			speed: 1000,
+		});	
+	})
+}
+window.addEventListener('load', largeSlider)
 
 function reveal() {
   let reveals = document.querySelectorAll(".reveal");
@@ -162,39 +162,36 @@ if ($(".product-left").length) {
   productThumbs.controller.control = productSlider;
 }
 
-Object.defineProperty(HTMLMediaElement.prototype, "playing", {
+Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
   get: function () {
-    return !!(
-      this.currentTime > 0 &&
-      !this.paused &&
-      !this.ended &&
-      this.readyState > 2
-    );
-  },
-});
-
-jQuery("body").on("click touchstart", function () {
-  const videoElement = document.getElementById("myVideo");
-  if (videoElement.playing) {
-  } else {
-    videoElement.play();
+      return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
   }
 });
 
-let swiper = new Swiper(".swiper", {
-  slidesPerView: 1,
-  spaceBetween: 20,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    600: {
-      slidesPerView: 2,
+jQuery('body').on('click touchstart', function () {
+          const videoElement = document.getElementById('myVideo');
+          if (videoElement.playing) {
+          }
+          else {
+              videoElement.play();
+          }
+  });
+
+
+  let swiper = new Swiper(".swiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
-  },
-});
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      600: {
+        slidesPerView: 2,
+      },
+    },
+  });

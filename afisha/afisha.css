@@ -40,7 +40,7 @@ nav {
   font-family: "Cormorant Garamond", serif;
   height: 90px;
   width: 100%;
-  background-color: #372d28;
+  background-color: #f89624;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
@@ -78,7 +78,7 @@ nav {
   color: white;
 }
 .nav-links-li-a:hover {
-  color: #fe8a3d;
+  color: #d65a00;
 }
 .nav-links li {
   position: relative;
@@ -88,7 +88,7 @@ nav {
   display: block;
   height: 3px;
   width: 0%;
-  background-color: #fe8a3d;
+  background-color: #d65a00;
   position: absolute;
   transition: all ease-in-out 250ms;
   margin: 0 0 0 10%;
@@ -145,7 +145,7 @@ main {
 }
 .tickets-button {
   width: 200px;
-  background: linear-gradient(147deg, #fe8a3d 0, #372d28 100%);
+  background: linear-gradient(147deg, #d65a00 0, #f89624 100%);
   padding: 15px 25px;
   border-radius: 5px;
   color: #fff;
@@ -195,7 +195,7 @@ main {
   transition: 1s;
 }
 .name:hover {
-  color: #fe8a3d;
+  color: #d65a00;
 }
 .pushkin {
   width: 80%;
@@ -224,7 +224,7 @@ main {
     font-family: "Cormorant Garamond", serif;
     height: 60px;
     width: 100vw;
-    background-color: #372d28;
+    background-color: #f89624;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
     display: flex;
     position: fixed;
@@ -252,7 +252,7 @@ main {
     align-items: center;
     text-transform: uppercase;
     position: fixed;
-    background: #372d28;
+    background: #f89624;
     height: 100vh;
     flex-direction: column;
     clip-path: circle(50px at 90% -20%);
@@ -280,7 +280,7 @@ main {
     clip-path: circle(1000px at 90% -10%);
     -webkit-clip-path: circle(1000px at 90% -10%);
     pointer-events: all;
-    background-color: #372d28;
+    background-color: rgba(55, 45, 40, 0.98);
   }
   .nav-links li {
     opacity: 0;
@@ -342,10 +342,10 @@ main {
   transition: 1s;
 }
 .section a:hover {
-  color: #fe8a3d;
+  color: #d65a00;
 }
 .border-shape {
-  background: #fe8a3d none repeat scroll 0 0;
+  background: #d65a00 none repeat scroll 0 0;
   color: #fff;
   display: block;
   height: 1px;
@@ -360,7 +360,7 @@ main {
 
 footer {
   width: 100%;
-  background-color: #372d28;
+  background-color: #f89624;
   color: #fff;
 }
 a[href^="tel"] {
@@ -388,7 +388,7 @@ a[href^="tel"] {
 }
 
 .top_header .fa {
-  color: #fe8a3d;
+  color: #d65a00;
   font-size: 35px;
 }
 .bottom_content .fa {
